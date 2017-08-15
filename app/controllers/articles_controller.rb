@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @krammed = Kramdown::Document.new(@article.content).to_html.html_safe
   end
 
   def new

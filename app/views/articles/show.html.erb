@@ -1,9 +1,11 @@
 
 
+
+
 <h2>
   <%= @article.title %>
   <%= link_to image_tag("edit.png", width: 18), edit_article_path(@article.id), method: :get %>
   <%= link_to image_tag("delete.png", width: 18), article_path(@article.id), method: :delete %>
 </h2>
 <hr>
-<p><%= @article.content %></p>
+<%= @krammed %>
