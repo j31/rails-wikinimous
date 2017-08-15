@@ -4,8 +4,6 @@
   <li>
     <h3>
     <%= link_to a.title, article_path(a.id) %>
-    <%= link_to image_tag("edit.png", width: 12), edit_article_path(a.id), method: :get %>
-    <%= link_to image_tag("delete.png", width: 12), article_path(a.id), method: :delete %>
     </h3>
     <p><%= a.content %></p>
   </li>
